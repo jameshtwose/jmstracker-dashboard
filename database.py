@@ -7,7 +7,9 @@ from jose import jwt
 from datetime import datetime
 load_dotenv(find_dotenv())
 
-connection_string = os.getenv("cockroack_db_connect_string")
+# connection_string = os.getenv("cockroack_db_connect_string")
+connection_string = os.getenv("cockroack_db_deta_connect_string")
+
 SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 ALGORITHM = os.getenv("JWT_ALGORITHM")
 
